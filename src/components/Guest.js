@@ -1,8 +1,11 @@
 import React from 'react';
+import GuestName from './GuestName';
 
 const Guest = props => 
     <li>
-        <span>{props.name}</span>
+        <GuestName isEditing={props.isEditing}>
+            {props.name}
+        </GuestName>
             <label>
                 <input 
                     type="checkbox" 
@@ -10,7 +13,7 @@ const Guest = props =>
                     onChange={props.handleConfirmation}
                     /> Confirmed
             </label>
-        <button>edit</button>
+        <button onClick={props.handleToggleEditing}>edit</button>
         <button>remove</button>
     </li>;
 
