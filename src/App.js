@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import GuestList from './components/GuestList';
+import Counter from './components/Counter';
 import './App.css';
 
 class App extends Component {
@@ -67,8 +68,8 @@ class App extends Component {
       });
 
   getTotalInvited = () => this.state.guests.length;
-  //getAttendingGuests = () =>
-  //getUnconfirmedGuest 
+   
+  
 
   toggleFilter = () =>
       this.setState({ isFiltered: !this.state.isFiltered });
@@ -91,8 +92,17 @@ class App extends Component {
        });
     }
 
+    getAttendingGuests = () =>
+    this.state.guests.reduce(
+      (total, guest) => guest.isConfirmed ? total + 1 : total, 
+      0);
 
+    
+  
   render() {
+    const totalInvited = this.getTotalInvited();
+    const numberAttending = this.getAttendingGuests();
+    const numberUnconfirmed = totalInvited - numberAttending;
     return (
       <div className="App">
         <header>
@@ -119,22 +129,11 @@ class App extends Component {
                 /> Hide those who haven't responded
             </label>
           </div>
-          <table className="counter">
-            <tbody>
-              <tr>
-                <td>Attending:</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td>Unconfirmed:</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td>Total:</td>
-                <td>3</td>
-              </tr>
-            </tbody>
-          </table>
+          <Counter 
+            totalInvited={totalInvited}
+            numberAttending={numberAttending}
+            numberUnconfirmed={numberUnconfirmed}
+            />
           <GuestList
             guests={this.state.guests} 
             toggleConfirmationAt={this.toggleConfirmationAt}
