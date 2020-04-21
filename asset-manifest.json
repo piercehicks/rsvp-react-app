@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/rsvp-react-app/static/css/main.ba9b7ddb.chunk.css",
+    "main.js": "/rsvp-react-app/static/js/main.7c248fc6.chunk.js",
+    "main.js.map": "/rsvp-react-app/static/js/main.7c248fc6.chunk.js.map",
+    "runtime-main.js": "/rsvp-react-app/static/js/runtime-main.b63d2dd7.js",
+    "runtime-main.js.map": "/rsvp-react-app/static/js/runtime-main.b63d2dd7.js.map",
+    "static/js/2.3368c127.chunk.js": "/rsvp-react-app/static/js/2.3368c127.chunk.js",
+    "static/js/2.3368c127.chunk.js.map": "/rsvp-react-app/static/js/2.3368c127.chunk.js.map",
+    "index.html": "/rsvp-react-app/index.html",
+    "precache-manifest.c36803a7d9e9c1060a946d99fbfc2b62.js": "/rsvp-react-app/precache-manifest.c36803a7d9e9c1060a946d99fbfc2b62.js",
+    "service-worker.js": "/rsvp-react-app/service-worker.js",
+    "static/css/main.ba9b7ddb.chunk.css.map": "/rsvp-react-app/static/css/main.ba9b7ddb.chunk.css.map",
+    "static/js/2.3368c127.chunk.js.LICENSE.txt": "/rsvp-react-app/static/js/2.3368c127.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/rsvp-react-app/static/media/jens-johnsson-apz-nFR0NlQ-unsplash.5ded4309.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b63d2dd7.js",
+    "static/js/2.3368c127.chunk.js",
+    "static/css/main.ba9b7ddb.chunk.css",
+    "static/js/main.7c248fc6.chunk.js"
+  ]
+}
