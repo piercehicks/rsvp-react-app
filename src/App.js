@@ -106,8 +106,8 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <h1>RSVP</h1>
-          <p>A Booking App</p>
+          <h1>YouIn?</h1>
+          <p>A RSVP Booking App</p>
           <form onSubmit={this.newGuestSubmitHandler}>
               <input 
                 type="text" 
